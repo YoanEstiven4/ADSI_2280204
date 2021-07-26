@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+    <h1>Registro BetPlay</h1>
+    <form action="" method="post">
+        <fieldset>
+            <div class="formulario">
+                <label>Ingrese Nombre</label><br>
+                <input type="text" name="Nombre"><br>
+                <label>Ingrese Apellidos</label><br>
+                <input type="text" name="Apellidos"><br>
+                <label>Codigo-Usuario</label><br>
+                <input type="text" name="Codigo"><br>
+                <label>Crear Clave</label><br>
+                <input type="text" name="Clave"><br>
+                <label>Confirmar</label><br>
+                <input type="text" name="Confirmar"><br>
+                <label>Observaciones</label><br>
+                <textarea name="observaciones" cols="33" rows="5"></textarea><br>
+                <label>Seleccionar Monto-Dinero</label><br>
+                <label><input type="checkbox" value="50,000 a 150,000">50,000 a 150,000</label><br>
+                <label><input type="checkbox" value="150,000 a 250,000">150,000 a 250,000</label><br>
+                <label><input type="checkbox" value="250,000 a 350,000">250,000 a 350,000</label><br><br>
+                <label>Seleccione Cuenta Bancaria</label><br>
+                <label><input type="radio" name="Cuenta" value="Bancolombia">Cuenta Bancolombia</label><br>
+                <label><input type="radio" name="Cuenta" value="BBVA">Cuenta BBVA Colombia</label><br>
+                <label><input type="radio" name="Cuenta" value="Davivienda">Cuenta Davivienda</label><br><br>
+                <label>Ciudad de Residencia</label><br>
+                <select name="Ciudad de Residencia">
+                    <option value="Bogota_City"><label>Bogota</label></option>
+                    <option value="Medellin_City"><label>Medellin</label></option>
+                    <option value="Cartagena_City"><label>Cartagena</label></option>
+                </select><br><br>
+                <input type="submit" value="Enviar">
+        </div>
+        </fieldset>
+    </form>
+</body>
+</html>
