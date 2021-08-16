@@ -1,0 +1,67 @@
+.post-static-1 {
+    width: 250px;
+    height: 250px;
+    margin-top: 5px;
+    background-color: rgb(15, 15, 139);
+    color: white;
+    position: static;
+    top: 70%;
+    left: 80%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(6, 6, 87);
+}
+.post-relative-1 {
+    width: 250px;
+    height: 250px;
+    margin-top: 5px;
+    background-color: orange;
+    color: white;
+    position: relative;
+    top: 70%;
+    left: 80%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(231, 153, 9);
+}
+.post-absolute-1, .post-absolute-2, .post-absolute-3 {
+    width: 250px;
+    height: 250px;
+    margin-top: 5px;
+    background-color: green;
+    color: white;
+    position: absolute;
+    top: 70%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(2, 77, 2);
+}
+.post-absolute-1 {
+    left: 50%;
+}
+.post-absolute-2 {
+    left: 65%;
+}
+.post-absolute-3 {
+    left: 80%;
+}
+.post-fixed-1 {
+    width: 200px;
+    height: 50px;
+    margin-top: 5px;
+    background-color: rgb(124, 0, 128);
+    color: white;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 8px;
+    vertical-align: middle;
+    font-size: 1em;
+    box-shadow: 5px 5px 5px rgb(87, 3, 90);
+}
+label {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 80px;
+}
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
