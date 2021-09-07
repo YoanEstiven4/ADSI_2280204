@@ -26,6 +26,7 @@ nav ul li a {
     font-size: 1.3em;
     text-decoration: none;
     padding: 20px;
+    /* height: 30px; */
 }
 .children {
     position: absolute;
@@ -65,6 +66,49 @@ p {
     position: relative;
     top: 3px;
     padding-left: 5px;
+}
+.icon-list {
+    float: left;
+    position: relative;
+    top: 3px;
+    /* font-size: 18px; */
+    color: white;
+    padding-right: 10px;
+    
+}
+.icon-briefcase {
+    float: left;
+    position: relative;
+    top: 3px;
+    /* font-size: 18px;*/
+    color: white;
+    padding-right: 10px;
+}
+.icon-man {
+    float: left;
+    position: relative;
+    top: 3px;
+    /* font-size: 18px; */
+    color: white;
+    padding-right: 10px;
+}
+.icon-browser {
+    float: left;
+    position: relative;
+    top: 3px;
+    /* font-size: 18px; */
+    color: white;
+    padding-right: 10px;
+    
+}
+.icon-home {
+    float: left;
+    position: relative;
+    top: 3px;
+    /* font-size: 18px; */
+    color: white;
+    padding-right: 10px;
+    /* margin-right: 10px; */
 }
 @media only screen and (max-width: 680px) {
     body {
