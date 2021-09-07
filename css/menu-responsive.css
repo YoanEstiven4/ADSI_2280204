@@ -31,7 +31,7 @@ nav ul li a {
 .children {
     position: absolute;
     display: none;
-    background: #02ac66;
+    background: #046bbe;
     text-align: left;
 }
 nav ul li:hover .children {
