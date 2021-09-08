@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    background-image: url("../img/boton10.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 85vh;
+    background-position: right bottom;
+    margin-left: -20px;
+}
+body {
+    background-image: url("../img/musician-349790_1920.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
