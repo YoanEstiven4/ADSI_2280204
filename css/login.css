@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: url("../img/mountains-ga8a2cc2c0_1920.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.login-box {
+    display: flex;
+    width: 320px;
+    height: 420px;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    background-color: rgba(64, 64, 64, .8);
+    border-radius: 10%;
+    /*z-index: 10;*/
+    /*align-items: center;
+    text-align: center;
+    justify-content: center;
+    /*margin-top: 80px;*/
+    /*margin-left: auto;
+    margin-right: auto;*/
+    
+    
+}
+h2 {
+    padding-top: -30px;
+    font-size: 1.6em;
+    color: rgb(12, 11, 11);
+    text-align: center;
+}
+.login-box .log {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    /*margin-top: -100px;*/
+    left: calc(50% - 50px);
+}
+.log {
+    padding-bottom: -30px;
+    display: flex;
+    justify-content: center;
+}
+.remember-pass {
+    text-decoration: none;
+    color: rgb(9, 9, 117);
+}
+.submit {
+    background-color: grey;
+    height: 3em;
+    width: 250px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.input-name {
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    
+}
+.input-pass {
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    
+}
