@@ -7,7 +7,7 @@
 }
 .box-style-3 {
     background: green;
-    height: 600px;
+    height: 500px;
 }
 .flex-direction-row {
     display: flex;
@@ -16,7 +16,7 @@
 }
 .flex-direction-column {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
 }
 .flex-wrap {
@@ -33,7 +33,7 @@
     display: flex;
     gap: 20px;
     flex-flow: column wrap;
-    overflow-x: scroll;
+    overflow-x: scroll ;
 }
 .flex-flow-column-no-wrap {
     display: flex;
@@ -55,12 +55,12 @@
     gap: 20px;
     justify-content: space-evenly;
 }
-.flex-justify-space-start {
+.flex-justify-flex-start {
     display: flex;
     gap: 20px;
     justify-content: flex-start;
 }
-.flex-justify-space-end {
+.flex-justify-flex-end {
     display: flex;
     gap: 20px;
     justify-content: flex-end;
@@ -68,22 +68,41 @@
 .flex-justify-flex-center {
     display: flex;
     gap: 20px;
+    /*align-items: center; */
     justify-content: center;
 }
-.align-items-flex-start {
+.aling-item-flex-start {
     display: flex;
     gap: 20px;
     align-items: flex-start;
 }
-.align-items-flex-end {
+.aling-item-flex-start {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+.aling-item-flex-center {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.aling-item-flex-end {
     display: flex;
     gap: 20px;
     align-items: flex-end;
 }
-.item-flex {
+.item-flex{
     background: rgb(0, 25, 139);
     width: 200px;
-    height: 200px;
+    height: 300px;
+    color: white;
+    font-size: 1.5em;
+}
+.item-flex-2 {
+    background: rgb(14, 46, 187);
+    width: 200px;
+    height: 400px;
     color: white;
     font-size: 1.5em;
 }
