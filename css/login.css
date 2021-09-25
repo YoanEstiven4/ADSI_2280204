@@ -77,7 +77,6 @@ h2 {
     border-bottom: 1px solid black;
     background: transparent;
     outline: none;
-    
 }
 .input-pass {
     border: none;
@@ -86,6 +85,7 @@ h2 {
     outline: none;
     
 }
+<<<<<<< HEAD
 input[type="text"], input[type="password"] {
     background-color: transparent;
     border: none;
@@ -94,3 +94,10 @@ input[type="text"], input[type="password"] {
     outline: none;
     color: rgb(48,48,48);
 }
+=======
+i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+>>>>>>> d346badca27c54a6f53cd13c81e439187bff95b7
