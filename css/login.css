@@ -75,3 +75,8 @@ h2 {
     outline: none;
     
 }
+i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
