@@ -3,7 +3,7 @@ $(document).ready(main);
 var contador = 1;
 
 function main() {
-    $('.icono-menu').click(function() {
+    $('.menu-bar').click(function() {
         if (contador == 1) {
             $('nav').animate ({
                 left: '0'
@@ -16,8 +16,5 @@ function main() {
                 left: '-100%'
             });
         }
-    });
-    $('.submenu').click(function() {
-        $(this).children('.children').slideToggle();
     });
 }

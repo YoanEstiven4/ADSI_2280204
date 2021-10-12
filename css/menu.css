@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.menu-bar {
+    display: none;
+}
+nav {
+    display: block;
+    background: #024a86;
+    width: 330px;
+    /*margin-top: -5px;*/
+}
+ul {
+    list-style: none;
+    text-align: right;
+}
+li {
+    display: block;
+    position: relative;
+    text-align: left;
+}
+nav ul li:hover {
+    background: #E6344A;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    font-size: 1.3em;
+    text-decoration: none;
+    padding: 20px;
+    /* height: 30px; */
+}
+.children {
+    position: absolute;
+    display: none;
+    background: #046bbe;
+    text-align: left;
+}
+nav ul li:hover .children {
+    display: block;
+    width: 130%;
+    text-align: left;
+}
+nav ul li .children li {
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid rgb(255,255,255);
+}
+nav ul li .children li a {
+    display: block;
+}
+.main-content {
+    margin: 30px;
+}
+h1 {
+    margin: 35px;
+    text-align: right;
+    color: rgb(64,64,64,.8);
+    font-family: Helvetica, sans-serif;
+}
+.icon-menu {
+    color: black;
+}
+p {
+    font-size: 1.3em;
+    line-height: 1.4em;
+    text-align: justify;
+}
+.icon-chevron-small-down {
+    float: right;
+    position: relative;
+    top: 3px;
+    padding-left: 5px;
+}
+.icon-list {
+    float: left;
+    position: relative;
+    top: 3px;
+    /* font-size: 18px; */
+    color: white;
+    padding-right: 10px;
+    
+}
+.icon-briefcase {
+    float: left;
+    position: relative;
+    top: 3px;
+    /* font-size: 18px;*/
+    color: white;
+    padding-right: 10px;
+}
+.icon-man {
+    float: left;
+    position: relative;
+    top: 3px;
+    /* font-size: 18px; */
+    color: white;
+    padding-right: 10px;
+}
+.icon-browser {
+    float: left;
+    position: relative;
+    top: 3px;
+    /* font-size: 18px; */
+    color: white;
+    padding-right: 10px;
+    
+}
+.icon-home {
+    float: left;
+    position: relative;
+    top: 3px;
+    /* font-size: 18px; */
+    color: white;
+    padding-right: 10px;
+    /* margin-right: 10px; */
+}
+/*@media only screen and (max-width: 680px) {
+    body {
+        padding-top: 68px;
+    }
+    h1 {
+        margin: 35px 0 35px 35px;
+        text-align: left;
+    }
+    nav {
+        position: fixed;
+        height: calc(100% - 68px);
+        width: 60%;
+        left: -100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .menu-bar {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background: #E6344A;
+    }
+    .bt-menu {
+        display: block;
+        padding: 20px;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .menu-bar span {
+        font-size: 40px;
+        float: right;
+    }
+    nav ul {
+        text-align: left;
+    }
+    nav ul li {
+        display: block;
+        border-bottom: 1px solid rgb(255,255,255,.5);
+    }
+    nav ul .children {
+        position: relative;
+        width: 100%;
+    }
+    nav ul li:hover .children {
+        display: none;
+    }
+}*/
