@@ -20,6 +20,11 @@ li {
 nav ul li:hover {
     background: #E6344A;
 }
+.content-main {
+    /* width: 90%; */
+    margin: 0 2em 0 22em;
+    text-align: justify;
+}
 nav ul li a {
     display: block;
     color: white;
@@ -27,25 +32,6 @@ nav ul li a {
     text-decoration: none;
     padding: 20px;
     /* height: 30px; */
-}
-.children {
-    position: absolute;
-    display: none;
-    background: #046bbe;
-    text-align: left;
-}
-nav ul li:hover .children {
-    display: block;
-    width: 130%;
-    text-align: left;
-}
-nav ul li .children li {
-    overflow: hidden;
-    display: block;
-    border-bottom: 1px solid rgb(255,255,255);
-}
-nav ul li .children li a {
-    display: block;
 }
 .main-content {
     margin: 30px;
