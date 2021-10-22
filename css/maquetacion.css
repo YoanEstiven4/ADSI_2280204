@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.encabezado, .nav-bar, .img-principal {
+    color: white;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: center;border-radius: 8px;
+}
+.main-container {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    gap: 20px;
+    grid-template: "encabezado         nav-bar         nav-bar"        100px
+                   "img-principal      img-principal   img-principal"  350px
+                   "card-1             card-2          card-3"         auto
+                   "card-4             card-5          card-6"         auto;                 
+}
+.encabezado {
+    background: rgb(51, 76, 255);
+    grid-area: encabezado;
+}
+.nav-bar {
+    background: goldenrod;
+    grid-area: nav-bar;
+}
+.img-principal {
+    background: green;
+    grid-area: img-principal;
+}
+.cards {
+    display: flex;
+}
+.card-1 {
+    grid-area: card-1;
+}
+.card-2 {
+    grid-area: card-3;
+}
+.card-3 {
+    grid-area: card-3;
+}
+.card-4 {
+    grid-area: card-4;
+}
+.card-5 {
+    grid-area: card-5;
+}
+.card-6 {
+    grid-area: card-6;
+}
