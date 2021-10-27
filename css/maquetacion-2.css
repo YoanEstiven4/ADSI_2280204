@@ -1,55 +1,101 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-.encabezado, .nav-bar, .img-principal {
+nav {
+    background-color: rgb(45, 42, 239);
+    transition: all .5s;
+}
+ul {
+    list-style: none;
+    text-align: right;
+}
+li {
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+    transition: all .5s;
+}
+a {
+    display: block;
+    text-decoration: none;
     color: white;
-    font-size: 1.8em;
-    display: flex;
-    justify-content: center;border-radius: 8px;
 }
-.main-container {
-    display: grid;
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1200px;
-    gap: 20px;
-    grid-template: "encabezado         nav-bar         nav-bar"        100px
-                   "img-principal      img-principal   img-principal"  350px
-                   "card-1             card-2          card-3"         auto
-                   "card-4             card-5          card-6"         auto;                 
+/* .sub-items {
+    display: none;
+    position: absolute;
+} */
+li:hover .children {
+    display: block;
+    position: absolute;
+    width: 100px;
 }
-.encabezado {
-    background: rgb(51, 76, 255);
-    grid-area: encabezado;
+.children li {
+    display: block;
+    background-color: rgb(239,82,42);
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid rgb(255,255,255,.5);
 }
-.nav-bar {
-    background: goldenrod;
-    grid-area: nav-bar;
+li .children {
+    display: none;
+    position: absolute;
+    top: 101%;
 }
-.img-principal {
-    background: green;
-    grid-area: img-principal;
+section {
+    margin-top: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
-.cards {
-    display: flex;
+.logo {
+    float: left;
+    margin-right: 20px;
 }
-.card-1 {
-    grid-area: card-1;
+  
+.cuerpo {
+    overflow: hidden;
 }
-.card-2 {
-    grid-area: card-3;
+.caja {
+    float: left;
+    width: 380px;
+    margin: 34px;
+    grid-area: caja;
 }
-.card-3 {
-    grid-area: card-3;
+.subtitulo {
+    background: rgb(45, 42, 239);
 }
-.card-4 {
-    grid-area: card-4;
+.servicios {
+    color: white;
+    text-align: center;
+    padding: 15px 0;
 }
-.card-5 {
-    grid-area: card-5;
+.efecto {
+    opacity: 0.8;
+    cursor: pointer;
 }
-.card-6 {
-    grid-area: card-6;
+.contenido {
+    padding: 15px;
+    text-align: justify;
+}
+h1 {
+    text-align: center;
+    font-family: 'Allan', cursive;
+    font-family: 'Zen Antique Soft', serif;
+}
+.boton {
+    padding: 12px 20px;
+    margin: 12px 0;
+    border-radius: 5px;
+    background: rgb(18, 66, 129);
+    color: white;
+}
+.boton:hover {
+    background: rgb(15, 53, 104);
+    cursor: pointer;
+}
+.servicios {
+    font-family: 'Allan', cursive;
+    font-family: 'Zen Antique Soft', serif;
 }
