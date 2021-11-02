@@ -1,4 +1,4 @@
-*{
+* {
     margin:0;
     padding: 0;
     }
@@ -36,7 +36,7 @@
         text-align: left;
     }
     li:hover {
-        background-color: rgb(146, 5, 47);
+        background-color: rgb(122, 6, 41);
         cursor: pointer;
         width: 150%;
     }
