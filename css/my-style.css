@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    margin-left: 20px;
+}
+.container-style {
+    background-color: goldenrod;
+    color: black;
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 60px;
+}
+.col-style {
+    border: 2px solid rgba(48,48,48,.8);
+}
+.row-style {
+    margin-bottom: 30px;
+}
