@@ -8,7 +8,7 @@
     .hamburger-menu{
         font-size: 2.1em;
         position: fixed;
-        top: 15px;
+        top: 10px;
         left: 20px;
         cursor: pointer;
         display: block;
@@ -115,6 +115,17 @@
         margin-right: 15px;
         color: rgb(64, 64, 64. .8);
         font-size: .9em;
+    }
+    .information {
+        margin-left: 550px;
+    }
+    h2 {
+        text-align: justify;
+        padding-left: 138px;
+    }
+    p {
+        text-align: justify;
+        padding-left: 69px;
     }
     @media (max-width:700px){
         nav{
