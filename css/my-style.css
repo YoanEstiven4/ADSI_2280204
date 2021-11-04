@@ -25,3 +25,12 @@ h2 {
 .row-style {
     margin-bottom: 30px;
 }
+.card-style{
+    margin: 15px;
+}
+.row{
+    display: inline-block;
+}
+.card-img-top{
+    display: inline-block;
+}
