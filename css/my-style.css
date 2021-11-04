@@ -36,3 +36,12 @@ h2{
     font-size: 1.5em;
     width: 100%;
 }
+.card-style{
+    margin: 15px;
+}
+.row{
+    display: inline-block;
+}
+.card-img-top{
+    display: inline-block;
+}
