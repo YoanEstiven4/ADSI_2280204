@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Web-Bootstrap_5</title>
+    <link rel="stylesheet" href="css/elements-basics-bootstrap-5.css">
+    <link rel="stylesheet" href="css/elements-basics-bootstrap-5-2.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <h2>Trabajando con Containers</h2><br>
+    <div class="container" style="background-color: rgb(12, 215, 225 );">
+        <h1 class="text">!Bienvenidos a la casa de la Tecnologia¡</h1>
+    </div>
+    <div class="container-md" style="background-color: rgb(12, 215, 225 );">
+        <h1 class="text">!Bienvenidos a la casa de la Tecnologia¡</h1>
+    </div>
+    <div class="container-fuid" style="background-color: rgb(12, 215, 225 );">
+        <h1 class="text">!Bienvenidos a la casa de la Tecnologia¡</h1>
+    </div><br>
+    <h2>Trabajando con filas y columnas</h2><br>
+    <div class="container first">
+        <div class="row">
+            <div class="col"> Perez </div>
+            <div class="col"> Torres </div>
+            <div class="col"> Casas </div>
+            <div class="col"> Maldivia </div>
+            <div class="col"> Chente </div>
+            <div class="col"> Robin </div>
+            <div class="col"> Vicenta </div>
+            <div class="col"> Acero </div>
+            <div class="col"> Philips </div>
+            <div class="col"> Carlota </div>
+            <div class="col"> Dora </div>
+            <div class="col"> Carla </div>
+            <div class="col"> Roscas </div>
+            <div class="col"> Timoteo </div>
+        </div>
+        <div class="row">
+            <div class="col"> 70% </div>
+            <div class="col"> 40% </div>
+            <div class="col"> 55% </div>
+            <div class="col"> 62% </div>
+            <div class="col"> 70% </div>
+            <div class="col"> 55% </div>
+            <div class="col"> 40% </div>
+            <div class="col"> 62% </div>
+            <div class="col"> 70% </div>
+            <div class="col"> 62% </div>
+            <div class="col"> 55% </div>
+            <div class="col"> 70% </div>
+            <div class="col"> 40% </div>
+            <div class="col"> 70% </div>
+        </div>
+        <div class="row">
+            <div class="col"> 40% </div>
+            <div class="col"> 62% </div>
+            <div class="col"> 70% </div>
+            <div class="col"> 62% </div>
+            <div class="col"> 55% </div>
+            <div class="col"> 70% </div>
+            <div class="col"> 90% </div>
+            <div class="col"> 40% </div>
+            <div class="col"> 70% </div>
+            <div class="col"> 40% </div>
+            <div class="col"> 40% </div>
+            <div class="col"> 50% </div>
+            <div class="col"> 70% </div>
+            <div class="col"> 55% </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6"> Periodo-Uno: Definido </div>
+            <div class="col"> Periodo-Dos: Definido </div>
+            <div class="col"> En Definicion: ... </div>
+        </div>
+    </div><br>
+    <h2>Trabajando con Select</h2><br>
+    <div class="container">
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Selecciona las cuotas</option>
+            <option value="1">1 Cuota</option>
+            <option value="2">2 Cuotas</option>
+            <option value="3">3 Cuotas</option>
+        </select>
+    </div><br>
+    <div class="container">
+        <select class="form-select" multiple aria-label="multiple select example">
+            <option selected>Seleccionar Estrato</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+    </div><br>
+    <div class="container">
+        <center>
+        <form id="form1" method="post" action="enviar.html">
+        <label>Nombre Completo</label>
+        <input type="text" name="nombre" class="form-control" required><br>
+
+        <label>Edad</label>
+        <input type="number" name="edad" class="form-control" required><br>
+
+        <label>Color Favorito</label>
+        <input type="color" class="form-control" style="width: 100px;" required><br>
+
+        <label>Area a desempeñarse</label>
+        <select name="area" class="form-control">
+            <option value="ing">Ingeniero</option>
+            <option value="med">Medico</option>
+            <option value="arq">Arquitecto</option>
+            <option value="pro">Programador</option>
+        </select><br>
+        
+        <button type="button" class="btn btn-success">Enviar</button>
+        
+        </form>
+        </center>
+    </div>
+    <h2>Trabajando con Checks</h2><br>
+    <div class="container">
+        <p>Escoja las opciones que crea necesarias</p>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              From
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              This
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              I Am
+            </label>
+          </div>
+    </div>
+    <h2>Solo una opcion</h2><br>
+    <div class="container">
+        <p>Escoja la opcion Correcta</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Finally
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Then
+            </label>
+          </div>
+    </div>
+    <h2>Switches</h2><br>
+    <div class="container">
+        <p>Escoja la opcion Correcta</p>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" disabled>
+            <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled>
+            <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+          </div>
+    </div>
+</body>
+</html>
