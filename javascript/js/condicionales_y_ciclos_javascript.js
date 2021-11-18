@@ -1,7 +1,8 @@
 /* if - else con operador de igualdad estricta*/
-var pass = "1234";
+var pass = 1234;
+var user = "Yoan";
 console.log("login and password");
-if (pass === 1234)
+if (pass === 1234 && user==="Yoan");
 {
     console.log("Acceso autorizado");
 }
