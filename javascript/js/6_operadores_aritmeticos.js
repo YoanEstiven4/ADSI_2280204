@@ -43,7 +43,8 @@ var sobrante = 0;
 /* Cuanto dinero corresponde a cada uno y cuanto sobra */
 montoIndividual = parseInt(ahorros / cantidadAportantes);
 console.log("El monto individual es de: " + montoIndividual);
+
+
 /* El signo de residuo es % */
-montoSobrante = ahorros % cantidadAportantes;
-console.log("El monto sobrante es de: " + montoSobrante);
-console.log("El monto sobrante es de: " + (ahorros - (montoIndividual * cantidadAportantes)));
+var sobrante = ahorros % cantidadAportantes;
+console.log("El monto sobrante es de:$ " + sobrante);
