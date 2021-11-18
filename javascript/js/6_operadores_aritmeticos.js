@@ -46,5 +46,6 @@ console.log("El monto individual es de: " + montoIndividual);
 
 
 /* El signo de residuo es % */
-var sobrante = ahorros % cantidadAportantes;
-console.log("El monto sobrante es de:$ " + sobrante);
+sobrante = (ahorros % cantidadaportantes);
+console.log("el monto sobrante es de: " + sobrante);
+console.log("el monto sobrante es de: " + (ahorros - (montoindividual * cantidadaportantes)));
