@@ -57,5 +57,10 @@ console.log("Hoy es: " + diaSemanaStr[dey]);
 var mesesStr = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 console.log("Fecha: " + diaSemanaStr[dey] + ", " + (dey + -2) + " de " + mesesStr[mes] + " del año " + anyo);
 
-var fechaFutura = new Date("January 2, 2022");
+var fechaFutura = new Date("January 2, 2002");
 /* Obtengo los milisegundos transcurridos hasta el dia de hoy */
+var msCurrent = currentTime.getTime();
+var msFechaFutura = fechaFutura.getTime();
+console.log(msCurrent, msFechaFutura);
+var diffMsFechaFutura = (msFechaFutura - msCurrent);
+console.log(diffMsFechaFutura);
