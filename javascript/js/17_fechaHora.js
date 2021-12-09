@@ -64,3 +64,21 @@ var msFechaFutura = fechaFutura.getTime();
 console.log(msCurrent, msFechaFutura);
 var diffMsFechaFutura = (msFechaFutura - msCurrent);
 console.log(diffMsFechaFutura);
+
+var fehcaHoraLimite = new Date(Date.UTC(2021, 11, 9, 8, 40));
+fehcaHoraLimite.setHours(8);
+console.log("Fecha y Hora de Vencimiento: " + fehcaHoraLimite);
+
+if (anyo <= fehcaHoraLimite.getFullYear() &&
+    mes <= fehcaHoraLimite.getMonth() &&
+    dey <= fehcaHoraLimite.getDate() &&
+    hora <= fehcaHoraLimite.getHours() &&
+    minu <= fehcaHoraLimite.getMinutes()) {
+        console.log("Falta: " + (dey - fehcaHoraLimite.getDate()) + " dias, " +
+                   (hora - fehcaHoraLimite.getHours()) + " horas, " +
+                   (fehcaHoraLimite.getMinutes() - minu) + " minutos");
+        console.log("El envio fue realizado con exito");
+}
+else{
+    console.log("Lo sentimos. La fecha de envio ya paso.");
+}

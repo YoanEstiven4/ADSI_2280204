@@ -74,7 +74,7 @@ var dey = fechaDey.getDate();
 var mes = fechaDey.getMonth();
 console.log("La fecha de hoy es: " + dey + " " + "del mes " + (mes + 1));
 
-var fechaCumpleanosYoan = new Date("December 8, 2021");
+var fechaCumpleanosYoan = new Date("December 9, 2021");
 var deyCumpleano = fechaCumpleanosYoan.getDate();
 var mesCumpleano = fechaCumpleanosYoan.getMonth();
 var felizCumplePorEnd = "Yoan Estiven";

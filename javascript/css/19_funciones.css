@@ -1,0 +1,16 @@
+div {
+    width: 300px;
+    margin: 0 auto;
+}
+.button-style {
+    margin-top: 200px;
+    height: 100px;
+    width: 300px;
+    background: yellow;
+    color: black;
+    font-size: 2em;
+    text-align: center;
+}
+.button-style:hover {
+    cursor: pointer;
+}
