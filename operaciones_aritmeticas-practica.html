@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones Aritmeticas Practica</title>
+    <link rel="stylesheet" href="css/suma-practica.css">
+    <link rel="stylesheet" href="css/resta.css">
+    <link rel="stylesheet" href="css/operaciones_aritmeticas-practica.css">
+    <script src="js/resta.js"></script>
+</head>
+<body style="background-image: url(../img/dragon.jpg);height: 2110px;">
+    <h3 style="text-align: center;border: 3px solid blue;color: white;">¡SUMA!</h3>
+<div class="border">
+<label for="numero1">Numero 1</label>
+<input type="text" id="numero1" placeholder="Number-One..." onchange="suma();"><br>
+
+<label for="numero2">Numero 2</label>
+<input type="text" id="numero2" placeholder="Number-Two..." onchange="suma();"><br>
+
+<label for="resultado">Resultado</label>
+<input type="text" id="resultado" placeholder="Resultado...">
+</div>
+<script>
+    // si la respuesta que se espera es sumar
+    function sumar(){
+        var numero1 = document.getElementById('numero1').value;
+        var numero2 = document.getElementById('numero2').value;
+
+        if(numero1!=='' && numero2!==''){
+            var suma = parseInt(numero1)+parseInt(numero2);
+            document.getElementById('resultado').value = suma;
+        }
+    }
+</script><br><br><br><br><br>
+
+
+<div class="container" style="border: 2;">
+<form action="" class="centrar">
+    <input type="text" id="numero3" placeholder="Number-One...">
+    <input type="text" id="numero4" placeholder="Number-Two...">
+    <input type="button" value="suma" onclick="alert( suma(10,50));">
+</form>
+</div>
+
+<script>
+    var suma = function (numero1, numero2){
+        var numero1 = parseFloat(document.getElementById("numero3").value);
+        var numero2 = parseFloat(document.getElementById("numero4").value);
+
+        var result = numero1 + numero2;
+
+        return result;
+    }
+</script><br><br>
+
+<h1 style="color: white;">sumar y resta</h1>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
+
+
+ 
+
+ <div ng-app="" class="style">
+     <p>Num1 : <input type="number" ng-model="n1"></p>
+     <p>Num2 : <input type="number" ng-model="n2"></p>
+     <h4>Suma  :  {{n1+n2}}</h4>
+     <h4>Resta  :  {{n1-n2}}</h4>
+ </div>
+
+<h3 style="text-align: center;border: 3px solid blue;color: white;">¡RESTA!</h3>
+<script>
+function cal() {
+    try {
+      document.f.sum.value = math.eval(document.f.expr.value);
+    } catch (e) {
+    }
+  }
+</script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/3.6.0/math.min.js"></script>
+  <form name="f" class="style-2">
+    <p>Expresión: <input type="text" name="expr" value="0 - 0" onchange="cal()" onkeyup="cal()" /></p>
+    <p>Resultado: <input type="text" name="sum" value="0" readonly="readonly" /></p>
+  </form>
+<h3 style="text-align: center;border: 3px solid blue;color: white;">¡MULTIPLICACION!</h3>
+<div class="style-3">
+<input id="1" placeholder="valor-1..." type="text"><p class="inter">X</p><input id="2" class="move" placeholder="valor-2..." type="text">
+      <input  class="buton" class="move" type="button" id="boton_calc" value="Costo">
+      <h1 type="button" id="esuma" class="derecha" placeholder="resultado">Costo</h1>
+       
+</div>
+      <script>
+        var m1 = document.getElementById("1");
+        var m2 = document.getElementById("2");
+        var boton_de_calcular = document.getElementById("boton_calc");
+        boton_de_calcular.addEventListener("click", res);
+    
+        function res() {
+            var multi = m1.value * m2.value;
+            document.getElementById("esuma").innerHTML=multi;
+        }
+      </script>
+
+<h3 style="text-align: center;border: 3px solid blue;color: white;">¡DIVISION!</h3><br><br><br><br><br>
+<br><div class="container-1">
+    <form action="" class="centrar">
+        <input type="text" id="numero7" placeholder="Number-One...">
+        <input type="text" id="numero8" placeholder="Number-Two...">
+        <input type="button" style="border: 3px solid red;" value="division" onclick="alert( suma(10,50));">
+    </form>
+    </div>
+    
+    <script>
+        var suma = function (numero5, numero7){
+            var numero5 = parseFloat(document.getElementById("numero7").value);
+            var numero7 = parseFloat(document.getElementById("numero8").value);
+    
+            var result = numero5 / numero7;
+    
+            return result;
+        }
+    </script><br>
+<h3 style="text-align: center;border: 3px solid blue;color: white;">¡SUMA - RESTA - MULTIPLICACION - DIVISION!</h3>
+<script type="text/javascript">
+    
+    function suma(){
+
+        var tor1 = Number(document.getElementById('tor1').value);
+        var tor2 = Number(document.getElementById('tor2').value);
+
+        var resul = tor1 + tor2;
+
+        document.getElementById('resul').value = resul;
+    }
+
+
+    function restar(){
+
+var tor1 = Number(document.getElementById('tor1').value);
+var tor2 = Number(document.getElementById('tor2').value);
+
+var resul = tor1 - tor2;
+
+document.getElementById('resul').value = resul;
+}
+
+
+function multiplicar(){
+
+var tor1 = Number(document.getElementById('tor1').value);
+var tor2 = Number(document.getElementById('tor2').value);
+
+var resul = tor1 * tor2;
+
+document.getElementById('resul').value = resul;
+}
+
+
+function division(){
+
+var tor1 = Number(document.getElementById('tor1').value);
+var tor2 = Number(document.getElementById('tor2').value);
+
+var resul = tor1 / tor2;
+
+document.getElementById('resul').value = resul;
+}
+</script>
+<div class="combinado" style="background: rgb(186, 74, 0);height: 380px;width: 400px; padding-top: 30px;padding-left: 50px;border-radius: 5px;border: 3px solid blue;">
+<p style="color: white;">Numero1 <input type="text" id="tor1"></p><br><br>
+<p style="color: white;">Numero2 <input type="text" id="tor2"></p><br><br>
+<p style="color: white;">Resultado <input type="text" id="resul"></p>
+
+<input type="button" value="Sumar" onclick="suma()">
+<input type="button" value="Restar" onclick="restar()">
+<input type="button" value="Multiplicar" onclick="multiplicar()">
+<input type="button" value="Division" onclick="division()">
+</div>
+
+<br><br><br><p style="color: white;text-align: center;">Calculadora</p>
+<center>
+    <form action="" name="Calculadora">
+        <table border="3">
+            <tr>
+                <td colspan="5">
+                <input type="text" name="txtboxnros" value="         0      " disabled>
+            </td></tr>
+            
+            <tr>
+            <td><input type="button" value="1" onclick="ingresarnumero(this.value)"></td>
+            <td><input type="button" value="2" onclick="ingresarnumero(this.value)"></td>
+            <td><input type="button" value="3" onclick="ingresarnumero(this.value)"></td>
+            <td><input type="button" value="+" onclick="ingresaoperacion(this.value)"></td>
+            <td><input type="button" value="-" onclick="ingresaoperacion(this.value)"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="4" onclick="ingresarnumero(this.value)"></td>
+                <td><input type="button" value="5" onclick="ingresarnumero(this.value)"></td>
+                <td><input type="button" value="6" onclick="ingresarnumero(this.value)"></td>
+                <td><input type="button" value="*" onclick="ingresaoperacion(this.value)"></td>
+                <td><input type="button" value="/" onclick="ingresaoperacion(this.value)"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="7" onclick="ingresarnumero(this.value)"></td>
+                <td><input type="button" value="8" onclick="ingresarnumero(this.value)"></td>
+                <td><input type="button" value="9" onclick="ingresarnumero(this.value)"></td>
+                <td><input type="button" value="^" onclick="ingresaoperacion('**')"></td>
+                <td><input type="button" value="√" onclick="raiz()"></td> 
+            </tr>
+
+            <tr>
+                <td><input type="button" value="0" onclick="ingresarnumero(this.value)"></td>
+                <td><input type="button" value="." onclick="ingresarnumero(this.value)"></td>
+                <td><input type="button" value="C" onclick="limpiar()"></td>
+                <td colspan="2"><input type="button" value="      =      " onclick="resulta()"></td>
+            </tr>
+        </table>
+    </form>
+
+<style>
+    input[type=button]
+    {
+        background-color: white;
+        border: none;
+        color: black;
+        font-weight: bold;
+        padding: 6px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 4px;
+        cursor: pointer;
+        box-shadow: 3px 3px 3px black;
+    }
+
+    input[type="text"]
+    {
+        border: solid;
+        color: black;
+        padding: 15px 32;
+        text-align: right;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 988;
+        box-shadow: 3px 3px 3px black;        
+    }
+
+    body
+    {
+        background-color: #D4D7DB;
+    }
+    table
+    {
+        background-color: #E4E7EA;
+        padding: 5px 5px;
+    }
+</style>
+</center>
+<script type="text/javascript">
+
+var numpantalla = "0";
+var pantallaconnumero = "si";
+var usarpunto = "no",
+var numespera = 0;
+var operapendiente = "";
+var solucion = "";
+
+function ingresarnumero(x)
+{
+    if(x!=".");
+}
+
+if(numpantalla=="0" || pantallaconnumero=="si")
+{
+    document.Calculadora.txtboxnros.value=x;
+    numpantalla=x;
+}
+else if(x!=".")
+{
+    document.Calculadora.txtboxnros.value+=x;
+    numpantalla+=x;
+}
+
+if(x=="." && usarpunto=="no" && numpantalla=="0")
+{
+    document.Calculadora.txtboxnros.value="0.";
+    numpantalla=x;
+    usarpunto="si";
+}
+else if(x=="." && usarpunto=="no")
+{
+    document.Calculadora.txtboxnros.value +=x;
+    numpantalla +=x;
+    usarpunto="si";
+}
+else if(x=="." && usarpunto=="si")
+{
+
+}
+pantallaconnumero="no";
+
+</script>
+</body>
+</html>
