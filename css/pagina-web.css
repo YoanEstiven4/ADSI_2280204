@@ -9,17 +9,21 @@
     margin-left: -135px;
     
 }
-.container-fluid {
+.container-fluid-2 {
     background: rgb(241, 196, 15);
-    height: 60px;
-    width: 500px;
-    margin-right: -155px;
+    height: 100px;
+    width: 600px;
+    margin-right: -125px;
     margin-left: -135px;
-    border: 3px solid crimson ;
-}
-.color,.btn,.btn-outline-success {
-    background: rgb(186, 74, 0);
+    /*border: 5px solid crimson ;*/
 }
 a, ul {
     text-decoration: none;
+}
+.container-fluid {
+    background: yellow;
+
+}
+.form-control.me-2 {
+    margin-left: 753px;
 }
