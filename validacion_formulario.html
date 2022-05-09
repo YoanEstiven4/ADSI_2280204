@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validacion - Formulario</title>
+</head>
+<body>
+    <div id="info" style="background: red;"></div>
+    
+    <form name="" action="" onsubmit="return validarFormulario('numeroDocumento');" method="" style="background: black;width: 220px;height: 200px;padding: 20px;border-radius: 5px;padding-bottom: 50px;">
+        <p style="text-align: left;color: white;">Nombre: <input type="text" id="" name="nombre" placeholder="Ingrese Su Nombre..." style="width: 200px;border-radius: 5px;text-align: center;"></p>
+        <h3 style="text-align: center;color: white;border-top: 3px solid red;border-bottom: 3px solid red;">Validando si el usuario ingreso informacion:</h3>
+        <p style="text-align: center;margin-right: 60px;color: white;">Numero de Documento: <input type="number" id="numeroDocumento" name="password" placeholder="Ingrese Documento..." style="border-radius: 5px;text-align: center;"></p>
+        <p style="margin-top: 30px;"><input type="submit" style="background: blue;border-radius: 5px;text-align: right;color: white;margin-bottom: -50px;"></p>
+    </form>
+    
+<script>
+    
+    function validarFormulario(numeroDocumento){
+     
+        var usuario = document.getElementById(numeroDocumento);
+        var texto;
+        var password = document.getElementById(numeroDocumento);
+
+        if(usuario.value == ""){
+            alert("Ingrese el numero del documento");
+            return false;
+        }
+    }
+</script>
+
+     
+</body>
+</html>
