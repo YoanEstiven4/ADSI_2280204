@@ -10,3 +10,6 @@ function intercambiarAurelio(){
 function intercambiarImagen(ruta) {
     document.getElementById("imgPrincipal").src = ruta;
 }
+function mostrarMensajeCasillas(ruta) {
+    document.getElementById("imgPrincipal").src = ruta;
+}
