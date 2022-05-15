@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        
+        <ul style="text-align: right;background-color: black;height: 85px; list-style: none;">
+            <img src="img/netflix.png" alt="netflix" class="netflix">
+            <li style="display: inline-block;color: white;"><a href="#"><button class="orientacion" name="button" style="background: red;color: white;height: 25px;width: 85px;border-radius: 5px;cursor: pointer;">REGISTRO</button></a></li>
+            <li style="display: inline-block;color: white;margin-top: -90px;"><a href="#" style="text-decoration: none;color: white;"><button class="orientacion" name="button" style="background: red;color: white;height: 25px;width: 55px;border-radius: 5px;cursor: pointer;">INICIO</button></a></li>          
+        </ul>
+    </nav>
+    <div class="box-img-principal">
+        <div>
+        <h2 style="color: white;margin-right: 120px;margin-top: 100px;text-align: center;">Netflix</h2><br>
+        <img src="img/1netflix.jpg" alt="" height="250px" width="220px" style="margin-left: 48px">
+        <p style="color: white;margin-right: 120px;margin-top: 30px;">!Disfruta de las mejores Peliculas y Series en Netflix¡</p>
+        </div>
+         <img id="imgPrincipal" class="img-principal" src="img/batista.jpg" alt="casillas" width="1920px" height="650">
+    </div>
+    <div class="cinta-movies">
+    <img id="idPadrino" class="img-cinta" onclick="intercambiarImagen('img/batista.jpg');" src="img/batista.jpg" alt="aurelio" width="590px" height="570px">
+    <img class="img-cinta" onclick="intercambiarImagen('img/cliff.jpg');" src="img/cliff.jpg" alt="aurelio" width="890px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/bright.jpg');" src="img/bright.jpg" alt="aurelio" width="890px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/batman.jpg');" src="img/batman.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/extraction.jpg');" src="img/extraction.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/angeles.jpg');" src="img/angeles.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/china.jpg');" src="img/china.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/crown.jpg');" src="img/crown.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/fire.jpeg');" src="img/fire.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/dare.jpg');" src="img/dare.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/duty.jpg');" src="img/duty.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/erase.jpg');" src="img/erase.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/escuadron.jpg');" src="img/escuadron.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/inocente.jpg');" src="img/inocente.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/jupiter.jpg');" src="img/jupiter.jpeg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/laberintojpg');" src="img/laberinto.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/life.jpg');" src="img/life.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/lucifer.jpg');" src="img/lucifer.webp" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/money.jpg');" src="img/money.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/muertos.jpg');" src="img/muertos.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/el_señor_de_los_cielos.jpg');" src="img/el_señor_de_los_cielos.jpg.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/narcos.jpg');" src="img/narcos.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/nun.jpg');" src="img/nun.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/papel.jpg');" src="img/papel.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/punisher.jpg');" src="img/punisher.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/rain.jpg');" src="img/rain.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/san.jpg');" src="img/san.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/shadow.jpg');" src="img/shadow.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/society.webp');" src="img/society.webp" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/stranger.webp');" src="img/stranger.webp" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/us.jpeg');" src="img/us.jpeg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/viaje.jpg');" src="img/viaje.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/witcher.jpg');" src="img/witcher.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/you.jpg');" src="img/you.jpg" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/fast.webp');" src="img/fast.webp" alt="aurelio" width="590px" height="470px">
+    <img class="img-cinta" onclick="mostrarMensajeCasillas('img/falla.jpg');" src="img/falla.jpg" alt="aurelio" width="590px" height="470px">
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
