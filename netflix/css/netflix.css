@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+.img-cinta{
+    width: 300px;
+    height: 290px;
+    cursor: pointer;
+    margin-left: 25px;
+}
+.box-img-principal{
+    display: block;
+    display: flex;
+    justify-content: right;
+    width: 98%;
+}
+.img-principal{
+    width: 750px;
+}
+.cinta-movies{
+    margin-top: 25px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin-left: -150px;
+    padding-left: 80px;
+    padding-top: 20px;
+}
+li{
+    margin-right: 130px;
+    cursor: pointer;
+}
+.netflix{
+    height: 55px;
+    width: 100px;
+    padding-top: 20px;
+    margin-right: 950px;
+}
