@@ -9,6 +9,7 @@
     height: 290px;
     cursor: pointer;
     margin-left: 25px;
+    border-radius: 5px;
 }
 .box-img-principal{
     display: block;
@@ -17,7 +18,8 @@
     width: 98%;
 }
 .img-principal{
-    width: 740px;
+    width: 720px;
+    border-radius: 5px;
 }
 .cinta-movies{
     margin-top: 25px;
@@ -35,7 +37,7 @@ li{
 }
 .netflix{
     height: 55px;
-    width: 100px;
+    width: 110px;
     padding-top: 20px;
     margin-right: 950px;
 }
