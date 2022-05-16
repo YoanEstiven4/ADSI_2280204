@@ -8,17 +8,17 @@
     width: 300px;
     height: 290px;
     cursor: pointer;
-    margin-left: 25px;
+    margin-left: 62px;
     border-radius: 5px;
 }
 .box-img-principal{
     display: block;
     display: flex;
     justify-content: right;
-    width: 98%;
+    width: 100%;
 }
 .img-principal{
-    width: 720px;
+    width: 750px;
     border-radius: 5px;
 }
 .cinta-movies{
@@ -40,4 +40,7 @@ li{
     width: 110px;
     padding-top: 20px;
     margin-right: 950px;
+}
+.img{
+    margin-right: 399px;
 }
