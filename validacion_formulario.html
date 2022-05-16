@@ -7,54 +7,18 @@
     <title>Validacion - Formulario</title>
     <link rel="stylesheet" href="css/validacion_formulario.css">
 </head>
-<body class="fondo" style="background-color: blue;">
-    <div id="info" style="background: red;"></div>
+<body>
+    <div>
+        <input id="numeroDocumento" type="text" name="numeroDocumento" placeholder="Ingrese su Documento"><br><br>
+        <input id="passwordUsuario" type="text" name="passwordUsuario" placeholder="Ingrese su Password">
+        <input type="submit" value="Enviar" onclick="guardarInfo">
+    </div>
     
-    <form name="" action="" onsubmit="return validarFormulario('numeroDocumento');" onsubmit="return validarCampo('textGenero');" method="" style="background: black;width: 220px;height: 550px;padding: 20px;border-radius: 5px;padding-bottom: 50px;text-align: center;margin-left: 550px;">
-        <h2 style="color: white;border-bottom: 3px solid red;text-align:center;">FORMULACION</h2>
-        <p style="text-align: left;color: white;">Nombre: <input type="text" id="" name="nombre" placeholder="Ingrese Su Nombre..." style="width: 200px;border-radius: 5px;text-align: center;"></p>
-        <p style="text-align: left;color: white;">Apellido: <input type="text" id="textApe" name="apellido" placeholder="Ingrese Su Apellido..." style="width: 200px;border-radius: 5px;text-align: center;"></p>
-        <p style="text-align: left;color: white;">Correo: <input type="text" id="textCorreo" name="correo" placeholder="Ingrese Su Correo..." style="width: 200px;border-radius: 5px;text-align: center;"></p>
-        <p style="text-align: left;color: white;">Edad: <input type="text" id="textEdad" name="edad" placeholder="Ingrese Su Edad..." style="width: 200px;border-radius: 5px;text-align: center;"></p>
-        <p style="text-align: left;color: white;">Departamento: <input type="text" id="numeroDocumento" name="departamento" placeholder="Ingrese Su Departamento..." style="width: 200px;border-radius: 5px;text-align: center;"></p>
-        <p style="text-align: left;color: white;">Genero: <input type="text" id="textGenero" name="genero" placeholder="Ingrese Su Genero..." style="width: 200px;border-radius: 5px;text-align: center;"></p>
-        <h3 style="text-align: center;color: white;border-top: 3px solid red;border-bottom: 3px solid red;">Validando si el usuario ingreso informacion:</h3>
-        <p style="text-align: center;margin-right: 60px;color: white;">Numero de Documento: <input type="number" id="numeroDocumento" name="password" placeholder="Ingrese Documento..." style="border-radius: 5px;text-align: center;"></p>
-        <p style="margin-top: 30px;"><input type="submit" style="background: blue;border-radius: 5px;text-align: right;color: white;margin-bottom: -50px;"></p>
-    </form>
     
-<script>
     
-    function validarFormulario(numeroDocumento){
-     
-        var usuario = document.getElementById(numeroDocumento);
-        var texto;
-        var password = document.getElementById(numeroDocumento);
-        var genero = document.getElementById(numeroDocumento);
-        var departamento = document.getElementById(numeroDocumento);
 
-        if(usuario.value == ""){
-            alert("Ingrese el numero del documento");
-            return false;
-        }
-        if(genero.value == ""){
-            alert("Ingrese el genero");
-            return false;
-        }
-        if(departamento.value == ""){
-            alert("Ingrese el departamento");
-            return false;
-        }
-    }
-    function validarCampo(textGenero){
-        var genero = document.getElementById(textGenero);
 
-        if(genero.value == ""){
-            alert("Ingrese el genero");
-            return false;
-        }
-    }
-</script>
+<link rel="stylesheet" href="js/validacion_formulario.js">
 
      
 </body>
