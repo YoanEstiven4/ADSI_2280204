@@ -7,19 +7,32 @@
     <title>Validacion - Formulario</title>
     <link rel="stylesheet" href="css/validacion_formulario.css">
 </head>
-<body>
-    <div>
-        <input id="numeroDocumento" type="text" name="numeroDocumento" placeholder="Ingrese su Documento"><br><br>
-        <input id="passwordUsuario" type="text" name="passwordUsuario" placeholder="Ingrese su Password">
-        <input type="submit" value="Enviar" onclick="guardarInfo">
+<body style="background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Far.pinterest.com%2Frominavpaniagua%2Fpaisajes%2F&psig=AOvVaw2YgNLjf8k3r4jv4ujXZAL1&ust=1652844282717000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMCrm_7K5fcCFQAAAAAdAAAAABAD);">
+    <div class="maining" style="background-color: maroon;width: 220px;height: 410px;border-radius: 5px;margin-left: 570px;margin-top: 70px;"><br>
+        <form action="" style="text-align: center;">
+            <h2 style="border-bottom: 3px solid yellow;">FORMULARIO</h2>
+        <p>Numero Documento: 
+            <input style="border-radius: 5px;" id="numeroDocumento" type="text" name="numeroDocumento" placeholder="Ingrese su Documento...">
+        </p>
+        <p>Nombre:
+            <input style="border-radius: 5px;" id="nombreUsuario" type="text" name="passwordUsuario" placeholder="Ingrese su Nombre...">
+        </p>
+        <p>Apellido:
+            <input style="border-radius: 5px;" id="apellidoUsuario" type="text" name="apellidoUsuario" placeholder="Ingrese su Apellido...">
+        </p>
+        <p>Fecha Nacimiento:
+            <input style="border-radius: 5px;" id="fechaUsuario" type="date" name="fechaUsuario" placeholder="Ingrese su Fecha...">
+        </p>
+        <p>Municipio:
+            <input style="border-radius: 5px;" id="municipioUsuario" type="text" name="municipioUsuario" placeholder="Ingrese su Municipio...">
+        </p>
+        <input style="border-radius: 5px;" class="enviar" type="submit" value="Enviar" onclick="guardarInfo();">
+    </form>
     </div>
     
     
-    
 
-
-<link rel="stylesheet" href="js/validacion_formulario.js">
-
+    <script src="js/validacion_formulario.js"></script>
      
 </body>
 </html>
