@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-content{
+    display: grid;
+    width: 100%;
+    background-color: yellow;
+    grid-template: "empty-top   empty-top          empty-top     empty-top" 50px
+                   "empty-izq   img-eclipse-lunar   info-libro    empty-der" auto /
+                   50px 200px             300px        1fr;
+}
+.img-eclipse-lunar{
+    grid-area: img-eclipse-lunar;
+    display: grid;
+    width: 100%;
+    
+}
+.info-libro{
+    grid-area: info-libro;
+    width: 100%;
+}
+.boton-cantidad-style{
+    border: 1px solid black;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background-color: grey;
+    font-size: 2.2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton-numeros{
+    margin-top: 350px;
+    cursor: pointer;
+}
