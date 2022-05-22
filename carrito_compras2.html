@@ -10,15 +10,27 @@
 <body>
 	<div class="main-content">
 		<h1>Subtotal COP:</h1>
-		<img class="img-eclipse-lunar" src="img/eclipse-lunar-640x360.jpg" alt="eclip lunar" style="margin-top: 50px;">
-		<div class="boton-numeros" style="display: inline-block;">
-			<div class="restarStock boton-cantidad-style">-</div>
-			<div id="cantidadLibros" class="cantidadSolicitada boton-cantidad-style">1</div>
-			<div class="sumarStock boton-cantidad-style" onclick="pruebaSuma();">+</div>
+		<div class="info" style="text-align: center;">Proceder al Pago (<label id="cantidadSingularPlural" >1 Producto</label>)</div>
+		<img class="img-eclipse-lunar" src="img/libro.jpg"  alt="eclipse lunar">
+		<div class="boton-numeros">
+			<div class="restarStock boton-cantidad-style" style="cursor: pointer;">-</div>
+			<div id="cantidadLibros" class="cantidadSolicitada boton-cantidad-style" style="background-color: white;color:black;">1</div>
+			<div class="sumarStock boton-cantidad-style" style="cursor: pointer;" onclick="pruebaSuma();">+</div>
 		</div>
-		<div class="info-libro"></div>
+		<div class="info-libro">LIBRO DE HISTORIA <p class="texto"> <br>Año Egresado:  1999 <br>
+			Autores:        Gabriel Garcia Marquez <br>
+			Siglo:          ix <br>
+			Descripcion: Narra acontecimientos politicos, <br> 
+			economicos, culturales, socioeconomicos, filosofia <br>
+			en los cuales los visitantes no se esperaban, el turismo <br>
+			crecia constantemente debido a la fuerte y jugosa <br>
+			 suma de capital o inyeccion de inversion en el pais.
+
+		</p><br>COP <label for="precioUnitario" id="costoUnitario();">$ 150.000</label>
 	</div>
-	<div class="info">Proceder al Pago (<label id="cantidadSingularPlural" >1 Producto</label>)</div>
+		
+	</div>
+	
 	<script src="js/script.js"></script>
 </body>
 </html>
