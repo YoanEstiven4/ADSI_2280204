@@ -13,12 +13,12 @@
                   id: 1,
                   nombre: 'Nevera',
                   precio: 5.100,
-                  imagen: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.entrepieles.com%2Ftienda%2Farticulos-de-cuero-para-hombres%2Fchaquetas-en-cuero-para-hombre%2Fchaqueta-en-cuero-esteban%2F&psig=AOvVaw2fNiZKUoBumScZ0Zxdcusg&ust=1653261171611000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCNjC_v3b8fcCFQAAAAAdAAAAABAD'
+                  imagen: '1netflix.jpg'
               },
               {
                   id: 2,
                   nombre: 'Cebolla',
-                  precio: 1.200,
+                  precio: 5.100,
                   imagen: 'cebolla.jpg'
               },
               {
@@ -73,7 +73,7 @@
           ];
 
           let carrito = [];
-          const divisa = 'COP';
+          const divisa = 'COL$';
           const DOMitems = document.querySelector('#items');
           const DOMcarrito = document.querySelector('#carrito');
           const DOMtotal = document.querySelector('#total');
@@ -230,7 +230,7 @@
                 <ul id="carrito" class="list-group"></ul>
                 <hr>
                 <!-- Precio total -->
-                <p class="text-right">Total: <span id="total"></span>&euro;</p>
+                <p class="text-right">Total: <span id="total"></span>COL$;</p>
                 <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
             </aside>
         </div>
