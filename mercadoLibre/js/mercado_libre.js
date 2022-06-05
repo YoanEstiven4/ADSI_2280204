@@ -23,10 +23,15 @@ buscarAutos.addEventListener("click", function() {
   document.getElementById("infoAuto").innerHTML = infoAutomovil;
 });
 
+for(let i)
+
 function maquetacion () {
     let mainContent = document.getElementById("mainContent");
     let marca = document.createElement("label");
     let textoMarca = document.createTextNode("Hola, como estan");
     marca.appendChild(textoMarca);
     mainContent.appendChild(marca);
+    let imagenAuto = document.createElement("img");
+    imagenAuto.setAttribute("src","img/auto.png");
+    mainContent.appendChild(imagenAuto);
 }
