@@ -37,7 +37,7 @@ function mostrarBusquedaCompleta(variado){
     contnt.appendChild(valorVariado);
 
     let descripcionVariados= document.createElement("label");
-    let textoVariado=document.createTextNode(variado.marca+" "+ variado.precio+" "+ variado.pais);
+    let textoVariado=document.createTextNode(variado.marca);
     descripcionVariados.appendChild(textoVariado);
     descripcionVariados.setAttribute("class","descripcion");
 
