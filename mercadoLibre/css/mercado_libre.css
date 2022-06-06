@@ -1,14 +1,70 @@
-.p{
-    background-color: red;
-    height: 90px;
+*{
+    margin: 0;
+    padding: 0;
+}
+.encabezado{
+    display: grid;
+    width: 100%;
+    height: 65px;
+    background: green;
+    grid-template: "menu busqueda carro" /
+                      1fr   6fr    1fr;
 }
 .menu{
-    /*background-color: yellow;*/
-    height: 40px;
+    grid-area: menu;
+    margin: 14px 21px auto 20px;
+    font-size: 1.3em;
+    font-weight: 400;
+    cursor: pointer;
+}
+#busquedaOrdenada{
+    grid-area: carro;
 }
 .contein{
-    background-color: green;
+    display: block;
+    border-bottom: 1px solid black;
 }
-.b{
-    background: white;
+.contenido{
+    display: grid;
+    padding: 25px;
+    box-sizing: border-box;
+    margin-bottom: 1px solid black;
+    grid-template: "img marca" 25px
+                   "img version_year" 25px
+                   "img precio" 25px
+                   "img pais" 25px
+                   "img imagen" auto /
+                    6fr   8fr    ;
+}
+.img{
+    width: auto;
+    grid-area: img;
+    height: 340px;
+    width: 350px;
+    border-bottom: 1px solid black;
+}
+.marca{
+    grid-area: marca;
+    margin-left: 20px;
+}
+.version_year{
+    grid-area: version_year;
+    margin-left: 20px;
+}
+.precio{
+    grid-area: precio;
+    padding-left: 20px;
+}
+.pais{
+    grid-area: pais;
+    margin-left: 20px;
+}
+.busqueda{
+    height: 30px;
+    margin-top: 15px;
+    margin-right: 990px;
+    padding-right: 450px;
+    padding-left: 450px;
+    border-radius: 20px;
+    text-align: left;
 }

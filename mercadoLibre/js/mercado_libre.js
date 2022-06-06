@@ -4,7 +4,7 @@ class Variados {
         this.version_year = version_year;
         this.precio = precio;
         this.pais = pais;
-        this.imagen = this.imagen;
+        this.imagen = imagen;
     }
 };
 
@@ -16,61 +16,80 @@ let variado5 = new Variados("TV Antigua", 2002, 2500000, "INGLATERRA", "img/tele
 let variado6 = new Variados("Televisor UHD", 2018, 3000000, "INGLAERRA", "img/uhd_v.png");
 let variado7 = new Variados("Televisor Antiguo (Segunda)", 2018, 3590000, "MEXICO", "img/uhd_v.png");
 
-function mostrarVariados(variado) {
-    let maincontent = document.getElementById("main-content");
-    let contentImg = document.createElement("div");
-    contentMain.appendChild(contentImg);
-    contentImg.setAttribute("class", "mainImg");
+function mostrarBusquedaCompleta(variado){
+    let contentmain=document.getElementById("main-content");
+    let contnt= document.createElement("div");
+     contentmain.appendChild(contnt);
+     contnt.setAttribute("class","contenido");
 
-    let imgVariados = document.createElement("img");
-    imgVariados.setAttribute("src", variado.imagen);
-    imgVariados.setAttribute("class", "estilo-img");
-    maincontent.appendChild(imgVariados);
+    let imgVariado= document.createElement("img");
+    imgVariado.setAttribute("src", variado.imagen);
+    imgVariado.setAttribute("class","img");
+    contnt.appendChild(imgVariado);
 
-    let valorVariados = document.createElement("label");
+    let valorVariado= document.createElement("label");
 
     let precioSugerido = new Intl.NumberFormat('es-ES', {}).format(variado.precio);
-    
-    
-    let textValorvariados = document.createTextNode("$" + precioSugerido);
-    valorVariados.appendChild(textValorvariados);
-    valorVariados.setAttribute("class", "precio");
-    contentImg.appendChild(valorVariados);
 
-    let describeTuVariado = document.createElement("label");
-    let descripcion = document.createTextNode(variado.marca + " " + variado.version);
-    describeTuVariado.appendChild(descripcion);
-    describeTuVariado.setAttribute("class", "descripcion");
-    maincontent.appendChild(describeTuVariado);
+    let descriValor= document.createTextNode("$" + precioSugerido);
+    valorVariado.appendChild(descriValor);
+    valorVariado.setAttribute("class","precio");
+    contnt.appendChild(valorVariado);
 
+    let descripcionVariados= document.createElement("label");
+    let textoVariado=document.createTextNode(variado.marca+" "+ variado.precio+" "+ variado.pais);
+    descripcionVariados.appendChild(textoVariado);
+    descripcionVariados.setAttribute("class","descripcion");
 
-    let anyoVariado = document.createElement("label");
-    let descriVariadoAnyo = document.createTextNode(variado.anyo);
-    maincontent.appendChild(descriVariadoAnyo);
-    
-    anyoVariado.setAttribute("class", "anyo");
-};
+    contnt.appendChild(descripcionVariados);
 
-window.addEventListener("keydown", function(event) {
-    let busqueda = document.getElementById("busquedaOrdenada").value;
-    if(event.key == "tclaEnter") {
-        limpiar();
-        if (busqueda == "USA") {
-            mostrarVariados(variado1);
-            mostrarVariados(variado2);
-            mostrarVariados(variado3);
-            mostrarVariados(variado4);
+    let yearVariado=document.createElement("label");
+    let textoyearVariado=document.createTextNode('Version ' + variado.version_year);
+    yearVariado.appendChild(textoyearVariado);
+    yearVariado.setAttribute("class","year");
+    contnt.appendChild(yearVariado);
+
+    /*let kilometrajecar=document.createElement("label");
+    let textkilometraje=document.createTextNode(car.kilometraje+" kilometros");
+    kilometrajecar.appendChild(textkilometraje);
+    kilometrajecar.setAttribute("class","kilometraje");
+    contimg.appendChild(kilometrajecar);*/
+
+    let country=document.createElement("label");
+    let textocountry=document.createTextNode('Pais '+ variado.pais);
+    country.appendChild(textocountry);
+    country.setAttribute("class","pais");
+    contnt.appendChild(country);
+
+}
+
+window.addEventListener("keydown",function(event){
+    let busquedaAvanzada=document.getElementById("busquedaOrdenada").value;
+    if(event.key=="Enter"){
+        console.log(busquedaAvanzada);
+        clean();
+        if(busquedaAvanzada=="Motorola"){
+            mostrarBusquedaCompleta(variado1);           
         }
-        else if (busqueda == "INGLATERRA") {
-            mostrarVariados(variado5);
-            mostrarVariados(variado6);
-            mostrarVariados(variado7);
+        else if(busquedaAvanzada=="Televisor OLED"){
+            mostrarBusquedaCompleta(variado2);
+            mostrarBusquedaCompleta(variado3);
+            mostrarBusquedaCompleta(variado5);
+            mostrarBusquedaCompleta(variado6);
+            mostrarBusquedaCompleta(variado7);
         }
-        else {
-        this.alert("El elemento ingresado no ha sido encontrado. Lo Sentimos...");
+       
+        else if(busquedaAvanzada=="Samsung Doblado"){
+            mostrarBusquedaCompleta(variado4);
+        }
+        
+       
+        
+        else{
+            alert("No se encontro esta busqueda...Lo Sentimos...");
         }
     }
-});
-function limpiar() {
-    document.getElementById("main-content").innerHTML = "";
-};
+})
+function clean(){
+    document.getElementById("main-content").innerHTML="";
+}
