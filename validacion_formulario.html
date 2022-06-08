@@ -4,35 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validacion - Formulario</title>
-    <link rel="stylesheet" href="css/validacion_formulario.css">
+    <title>FORMULARIO||VALIDACIÓN</title>
 </head>
-<body style="background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Far.pinterest.com%2Frominavpaniagua%2Fpaisajes%2F&psig=AOvVaw2YgNLjf8k3r4jv4ujXZAL1&ust=1652844282717000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMCrm_7K5fcCFQAAAAAdAAAAABAD);">
-    <div class="maining" style="background-color: maroon;width: 220px;height: 410px;border-radius: 5px;margin-left: 570px;margin-top: 70px;"><br>
-        <form style="text-align: center;">
-            <h2 style="border-bottom: 3px solid yellow;">FORMULARIO</h2>
-        <p>Numero Documento: 
-            <input style="border-radius: 5px;" id="numeroDocumento" type="text" name="numeroDocumento" placeholder="Ingrese su Documento...">
-        </p>
-        <p>Nombre:
-            <input style="border-radius: 5px;" id="nombreUsuario" type="text" name="passwordUsuario" placeholder="Ingrese su Nombre...">
-        </p>
-        <p>Apellido:
-            <input style="border-radius: 5px;" id="apellidoUsuario" type="text" name="apellidoUsuario" placeholder="Ingrese su Apellido...">
-        </p>
-        <p>Fecha Nacimiento:
-            <input style="border-radius: 5px;" id="fechaUsuario" type="date" name="fechaUsuario" placeholder="Ingrese su Fecha...">
-        </p>
-        <p>Municipio:
-            <input style="border-radius: 5px;" id="municipioUsuario" type="text" name="municipioUsuario" placeholder="Ingrese su Municipio...">
-        </p>
-        <input style="border-radius: 5px;" class="enviar" type="submit" value="Enviar" onclick="guardarInfo();">
-    </form>
+<body>
+    <div style="background-color: rgb(0, 128, 111);width: 310px;height: 422px;justify-content: center;border-radius: 8px;margin-top: 120px;margin-left: 490px;"><br>
+        <img src="img/user.png"  style="margin-left:110px;height:80px;">
+        <h3 style="margin-top: 30px;border-bottom: 1px solid black;text-align: center;">---VALIDAR INFORMACION DE USUARIOS---</h3>
+    
+    <table>
+        <tr>
+            <td>NUMERO DOCUMENTO:</td>
+            <td>
+                <input type="number" id="numeroDocumento" name="numeroDocumento" placeholder="Ingrese documento" style="border-radius: 8px;">
+            </td>
+        </tr>
+        <tr>
+            <td>NOMBRE:</td>
+            <td>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre" style="border-radius: 8px;">
+            </td>
+        </tr>
+        <tr>
+            <td>APELLIDO:</td>
+            <td>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingrese apellido" style="border-radius: 8px;">
+            </td>
+        </tr>
+        <tr>
+            <td>DIRECCION:</td>
+            <td>
+                <input type="text" id="direccion" name="direccion" placeholder="Ingrese direccion" style="border-radius: 8px;">
+            </td>
+        </tr>
+        <tr>
+            <td>TELEFONO:</td>
+            <td>
+                <input type="text" id="telefono" name="telefono" placeholder="Ingrese telefono" style="border-radius: 8px;">
+            </td>
+        </tr>
+    </table><br>
+    <div style="background: rgb(205, 218, 24);height: 50px;border: radius bottom 8px;">
+        <input class="boton" type="submit" value="Enviar" onclick="guardarInfo();" style="margin-left: 120px;margin-top: 12px;border-radius: 8px;">
+        
     </div>
-    
-    
-
+    </div>
     <script src="js/validacion_formulario.js"></script>
-     
 </body>
 </html>

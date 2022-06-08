@@ -1,36 +1,33 @@
-"use strict"
-
-function guardarInfo(){
+function guardarInfo() {
     let numeroDocumento = document.getElementById("numeroDocumento").value;
-    if (numeroDocumento == "")  {
-        alert("Por favor, Ingresar el numero de Documento");
+    if (numeroDocumento == "") {
+        alert("Ingresa el numero de documento");
         return false;
     }
-    if (document.getElementById("nombreUsuario").value == "") {
-        alert("Por favor, Ingresar el nombre de Usuario");
+    if (document.getElementById("nombre").value == "") {
+        alert("Ingrese su Nombre de usuario");
         return false;
     }
-    if (document.getElementById("apellidoUsuario").value == "") {
-        alert("Por favor, Ingresar el apellido de Usuario");
+    if (document.getElementById("apellido").value == "") {
+        alert("Ingrese su Apellido");
         return false;
     }
-    if (document.getElementById("fechaUsuario").value == "") {
-        alert("Por favor, Ingresar la fecha de Usuario");
+    if (document.getElementById("direccion").value == "") {
+        alert("Ingrese su Direccion");
         return false;
     }
-    if (document.getElementById("municipioUsuario").value == "") {
-        alert("Por favor, Ingresar el municipio de Residencia");
+    if (document.getElementById("telefono").value == "") {
+        alert("Ingrese su Telefono");
         return false;
     }
-    alert("Informacion guardada con Exito");
-    limpiarFormulario();
+    alert("Informacion guardada con exito");
+    /*limpiarformulario();*/
     return true;
 }
-function limpiarFormulario() {
+/*function limpiarformulario() {
     document.getElementById("numeroDocumento").value = "";
-    document.getElementById("nombreUsuario").value = "";
-    document.getElementById("apellidoUsuario").value = "";
-    document.getElementById("fechaUsuario").value = "";
-    document.getElementById("municipioUsuario").value = "";
-    
-}
+    document.getElementById("nombre").value = "";
+    document.getElementById("apellido").value = "";
+    document.getElementById("direccion").value = "";
+    document.getElementById("telefono").value = "";
+}*/
