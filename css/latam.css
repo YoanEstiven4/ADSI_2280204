@@ -42,6 +42,7 @@
 }
 .grid1{
     background: rgb(11, 133, 113);
+    
     color: white;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 10px;
@@ -54,6 +55,7 @@
 .grid3{
     background: rgb(207, 200, 200);
     text-align: center;
+    color: blue;
 }
 .grid4{
     grid-column: 4 / 2;
@@ -63,6 +65,7 @@
 .grid5{
     background: rgb(207, 200, 200);
     text-align: center;
+    color: blue;
 }
 .grid6{
     background: rgb(207, 200, 200);
@@ -96,4 +99,8 @@
     background: rgb(207, 200, 200);
     border-bottom-right-radius: 20px;
     text-align: center;
+    color: blue;
 }
+/*.margen{
+    font-weight: 10px;
+}*/
