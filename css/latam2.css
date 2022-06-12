@@ -23,24 +23,99 @@
     margin-top:  -20px;
     cursor: pointer;
 }
-.grid{
+/*.grid{
     display: grid;
     margin-top: 30px;
     margin-left: 80px;
     margin-right: 80px;
     /*box-shadow: -30px 30px 30px rgba(0, 0, 0, 0.1);*/
     /*border: 1px solid black;*/
-    grid-template-columns: 35% 10% 10% 35%;
+    /*grid-template-columns: 35% 10% 10% 35%;
     grid-template-rows: 30% 20% 20%  30%;
     border-radius: 8px;
+}*/
+
+.content{
+    display:grid;
+    margin: 20px; /*15 25 20 25*/
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:1px 1px 3px 1px rgba(96, 100, 100, 0.3) ;
+    border-color: white;
+    grid-template: "economico   vacio           vacio        "30px
+                   "horaSalida  duracion        horaLlegada  "35px
+                   "origen      duracionTiempo  destino      "30px
+                   "separador   separador       separador    "5px
+                   "paradas     valor           valor        "45px /
+                    1fr        1fr            1fr;
+
+
 }
-.grid div{
-    /*background: ;*/
-    
-    padding: 1em;
-    /*border-radius: 8px;*/
+.economic{
+    grid-area: economic;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px; 
+    padding: 5px;
+    font-size: .95em;
+    width: 150px;
+    color: white;
+    background-color: darkcyan;
 }
-.grid1{
+.horaSalida{
+    grid-area: horaSalida;
+    font-size: 1.5em;
+    color: rgb(27,0,136);
+    margin-top: 5px;
+    margin-left: 25px;
+}
+.duracion{
+    grid-area: duracion;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.horaLlegada{
+    grid-area: horaLlegada;
+    font-size: 1.5em;
+    color: rgb(27,0,136);
+    margin-top: 5px;
+    margin-right: 25px;
+    text-align: right;
+}
+.origen{
+    grid-area: origen;
+    margin-left: 25px;
+}
+.duracionTiempo{
+    grid-area: duracionTiempo;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.destino{
+    grid-area: destino;
+    margin-left: 25px;
+
+}
+.separador {
+    grid-area: separador;
+    margin: 0 20px;
+    background-color: gray;
+    font-size: .2em; 
+}
+.paradas{
+    grid-area: paradas;
+    padding-left: 20px;
+}
+.valor{
+    grid-area: valor;
+    display: flex;
+    padding-right: 20px;
+    justify-content: right;
+    align-items: center; 
+
+}
+/*.grid1{
     background: rgb(11, 133, 113);
     
     color: white;
@@ -100,7 +175,7 @@
     border-bottom-right-radius: 20px;
     text-align: center;
     color: blue;
-}
+}*/
 /*.margen{
     font-weight: 10px;
 }*/

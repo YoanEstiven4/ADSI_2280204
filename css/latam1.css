@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.cabecera{
+    background: rgb(40, 0, 127);
+    height: 98px;
+}
+.mini-menu{
+    background: yellow;
+}
+.img-latam{
+    height: 80px;
+    width: 200px;
+    margin-left: 80px;
+    margin-top: 10px;
+    
+}
+.img-menu{
+    height: 50px;
+    width: 50px;
+    margin-left: 1000px;
+    margin-top:  -20px;
+    cursor: pointer;
+}
+.grid{
+    display: grid;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    /*box-shadow: -30px 30px 30px rgba(0, 0, 0, 0.1);*/
+    /*border: 1px solid black;*/
+    grid-template-columns: 35% 10% 10% 35%;
+    grid-template-rows: 30% 20% 20%  30%;
+    border-radius: 8px;
+}
+.grid div{
+    /*background: ;*/
+    
+    padding: 1em;
+    /*border-radius: 8px;*/
+}
+.grid1{
+    background: rgb(11, 133, 113);
+    
+    color: white;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 10px;
+}
+.grid2{
+    grid-column:  2 / 3 span;
+    background: rgb(207, 200, 200);
+    border-top-right-radius: 20px;
+}
+.grid3{
+    background: rgb(207, 200, 200);
+    text-align: center;
+    color: blue;
+}
+.grid4{
+    grid-column: 4 / 2;
+    background: rgb(207, 200, 200);
+    text-align: center;
+}
+.grid5{
+    background: rgb(207, 200, 200);
+    text-align: center;
+    color: blue;
+}
+.grid6{
+    background: rgb(207, 200, 200);
+    border-bottom: 3px solid black;
+    
+    text-align: center;
+}
+.grid7{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background: rgb(207, 200, 200);
+    border-bottom: 3px solid black;
+    text-align: center;
+}
+.grid8{
+    background: rgb(207, 200, 200);
+    border-bottom: 3px solid black;
+    text-align: center;
+}
+.grid9{
+    background: rgb(207, 200, 200);
+    border-bottom-left-radius: 20px;
+    text-align: center;
+}
+.grid10{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background: rgb(207, 200, 200);
+}
+.grid11{
+    background: rgb(207, 200, 200);
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    color: blue;
+}
+/*.margen{
+    font-weight: 10px;
+}*/
