@@ -19,7 +19,7 @@
 .img-menu{
     height: 50px;
     width: 50px;
-    margin-left: 1000px;
+    margin-left: 1500px;
     margin-top:  -20px;
     cursor: pointer;
 }
@@ -35,7 +35,11 @@
     border-radius: 8px;
 }*/
 
-.content{
+#contenido {
+    background-color: rgb(243,242,246);
+}
+
+.contenedorVuelo{
     display:grid;
     margin: 20px; /*15 25 20 25*/
     background-color: white;
@@ -51,8 +55,8 @@
 
 
 }
-.economic{
-    grid-area: economic;
+.economico{
+    grid-area: economico;
     border-top-left-radius: 5px;
     border-bottom-right-radius: 5px; 
     padding: 5px;
@@ -74,7 +78,7 @@
     justify-content: center;
     align-items: center;    
 }
-.horaLlegada{
+.horallegada{
     grid-area: horaLlegada;
     font-size: 1.5em;
     color: rgb(27,0,136);
@@ -94,7 +98,7 @@
 }
 .destino{
     grid-area: destino;
-    margin-left: 25px;
+    margin-left: 510px;
 
 }
 .separador {
@@ -102,7 +106,6 @@
     margin: 0 20px;
     background-color: gray;
     font-size: .2em; 
-    width: 80%;
 }
 .paradas{
     grid-area: paradas;

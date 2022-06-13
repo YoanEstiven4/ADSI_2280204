@@ -1,29 +1,27 @@
 "use strict"
 
-/*let fechaVuelo = undefined;*/
 let jornada = undefined;
-/*let horarioVuelo = undefined;*/
 
 class Vuelos {
-    constructor(horaSalida, horaLlegada, duracion, origen, destino, precio, stopping, economic) {
+    constructor(horaSalida, horaLlegada, duracion, origen, destino, precio, paradas, economico) {
         this.horaSalida = horaSalida;
         this.horaLlegada = horaLlegada;
         this.duracion = duracion;
         this.origen = origen;
         this.destino = destino;
         this.precio = precio;
-        this.stopping = stopping;
-        this.economic = economic;
+        this.paradas = paradas;
+        this.economico = economico;
     }
 }
 
 
 window.onload = function() {
-    buscarVuelos();
+    vuelos();
 };
     
 //esta funcion nos servira para determinar si la hora debe ser am o pm
-function definir(horaEvento) {
+function definirJornada(horaEvento) {
     if (horaEvento.getHours() < 12) {
         jornada = "a.m.";
     }
@@ -35,80 +33,110 @@ function definir(horaEvento) {
     return horaEventoTxt;
 }
 //creamos las variables de tipo date para las horas de salida y de llegada
-    let horaSalida1 = new Date(2022, 2, 10, 8, 12, 0);
-    let horaLlegada1 = new Date(2022, 2, 13, 12, 12, 0);
-    let horaSalida11 = definir(horaSalida1);
-    let horaLlegada11 = definir(horaLlegada1);
+    let horaSalida1 = new Date(2022, 12, 11, 10, 12, 0);
+    let horaLlegada1 = new Date(2022, 12, 11, 11, 32, 0);
+    let horaSalida1Str = definirJornada(horaSalida1);
+    let horaLlegada1Str = definirJornada(horaLlegada1);
 
-    let horaSalida2 = new Date(2022, 2, 11, 5, 30, 0);
-    let horaLlegada2 = new Date(2022, 2, 10, 8, 32, 0);
-    let horaSalida22 = definir(horaSalida2);
-    let horaLlegada22 = definir(horaLlegada2);
+    let horaSalida2 = new Date(2022, 2, 12, 8, 35, 0);
+    let horaLlegada2 = new Date(2022, 2, 12, 9, 45, 0);
+    let horaSalida2Str = definirJornada(horaSalida2);
+    let horaLlegada2Str = definirJornada(horaLlegada2);
 
-    let horaSalida3 = new Date(2022, 2, 9, 13, 35, 0);
-    let horaLlegada3 = new Date(2022, 2, 10, 8, 40, 0);
-    let horaSalida3Str = definir(horaSalida3);
-    let horaLlegada3Str = definir(horaLlegada3);
+    let horaSalida3 = new Date(2022, 2, 12, 11, 40, 0);
+    let horaLlegada3 = new Date(2022, 2, 12, 12, 50, 0);
+    let horaSalida3Str = definirJornada(horaSalida3);
+    let horaLlegada3Str = definirJornada(horaLlegada3);
 
+    let horaSalida4 = new Date(2022, 11, 12, 11, 30, 0);
+    let horaLlegada4 = new Date(2022, 11, 12, 12, 50, 0);
+    let horaSalida4Str = definirJornada(horaSalida4);
+    let horaLlegada4Str = definirJornada(horaLlegada4);
+
+    let horaSalida5 = new Date(2022, 11, 12, 11, 30, 0);
+    let horaLlegada5 = new Date(2022, 11, 12, 12, 50, 0);
+    let horaSalida5Str = definirJornada(horaSalida5);
+    let horaLlegada5Str = definirJornada(horaLlegada5);
 
     //creamos el areglo de arreglos
-    let catalogoVuelos = [{
-        "horaSalida": horaSalida11,
-        "horaLlegada": horaLlegada11,
-        "duracion": "Duracion",
+    let vuelo = [{
+        "horaSalida":  horaSalida1Str,
+        "horaLlegada": horaLlegada1Str,
+        "duracion": "Duracion",//dudas
         "duracionVueloStr": "1h 20Min",
         "origen": "BOG",
         "destino": "CTG",
         "precio": 375000,
-        "stopping": "Directo",
-        "economic": "Mas Economico"
+        "parada": "Directo",
+        "economico": "Más Económico..."
     },
     {
-        "horaSalida":  horaSalida22,
-        "horaLlegada": horaLlegada22,
-        "duracion": "Duracion",
+        "horaSalida":  horaSalida2Str,
+        "horaLlegada": horaLlegada2Str,
+        "duracion": "Duracion",//dudas
         "duracionVueloStr": "1h 20Min",
         "origen": "BGT",
         "destino": "CTG",
         "precio": 282000,
-        "stopping": "Directo",
-        "economic": "Mas Economico" 
+        "parada": "Directo",
+        "economico": "Más Económico..." 
     },
     
     {
-        "horaSalida":  horaSalida3Str,
-        "horaLlegada": horaLlegada3Str,
-        "duracion": "Duracion",
+        "horaSalida":  horaSalida4Str,
+        "horaLlegada": horaLlegada4Str,
+        "duracion": "Duracion",//dudas
         "duracionVueloStr": "1h 20Min",
         "origen": "BGT",
         "destino": "CTG",
-        "precio": 450000,
-        "stopping": "Directo",
-        "economic": "Mas Economico" 
-    
+        "precio": 900000,
+        "parada": "Directo",
+        "economico": "Más Económico..." 
+    },
+    {
+        "horaSalida":  horaSalida3Str,
+        "horaLlegada": horaLlegada3Str,
+        "duracion": "Duracion",//dudas
+        "duracionVueloStr": "1h 20Min",
+        "origen": "BGT",
+        "destino": "CTG",
+        "precio": 420000,
+        "parada": "Directo",
+        "economico": "Más Económico..."
+    },
+        {
+            "horaSalida":  horaSalida5Str,
+            "horaLlegada": horaLlegada5Str,
+            "duracion": "Duracion",//dudas
+            "duracionVueloStr": "1h 20Min",
+            "origen": "BGT",
+            "destino": "CTG",
+            "precio": 420000,
+            "parada": "Directo",
+            "economico": "Más Económico..."
     }];
 
 
 //esta funcion buscara los vuelos
-function buscarVuelos() {
+function vuelos() {
     let duracionTxt = "Duración";
-    for(let i = 0; i < catalogoVuelos.length; i++) {
-        cargar(catalogoVuelos[i].horaSalida,  catalogoVuelos[i].horaLlegada,  
-            catalogoVuelos[i].origen, catalogoVuelos[i].destino, catalogoVuelos[i].duracion, catalogoVuelos[i].duracionVueloStr, catalogoVuelos[i].precio, catalogoVuelos[i].stopping, catalogoVuelos[i].economic);
+    for(let i = 0; i < vuelo.length; i++) {
+        cargar(vuelo[i].horaSalida,  vuelo[i].horaLlegada,  
+            vuelo[i].origen, vuelo[i].destino,vuelo[i].duracion, vuelo[i].duracionVueloStr, vuelo[i].precio, vuelo[i].parada, vuelo[i].economico);
     } 
     
 }
 
 //la funcion que cargara los vuelos
-function cargar(horaSalida,horaLlegada,origen,destino,duracion,duracionVuelos,precio,stopping,economic){
-    let contPrincipal=document.getElementById("contenidoVuelos");
+function cargar(horaSalida,horaLlegada,origen,destino,duracion,duracionVueloStr,precio,parada,economico){
+    let contPrincipal=document.getElementById("contenido");
     let contPrincipalVuelo=document.createElement("div");
-    contPrincipalVuelo.setAttribute("class","content")
+    contPrincipalVuelo.setAttribute("class","contenedorVuelo")
     contPrincipal.appendChild(contPrincipalVuelo);
 
     let neweconomico=document.createElement("div");
     contPrincipalVuelo.appendChild(neweconomico);
-    let txteconomico=document.createTextNode(economic);
+    let txteconomico=document.createTextNode(economico);
     neweconomico.appendChild(txteconomico);
     neweconomico.setAttribute("class","economico");
 
@@ -133,9 +161,9 @@ function cargar(horaSalida,horaLlegada,origen,destino,duracion,duracionVuelos,pr
     
     let duracionVuelo = document.createElement("label");
     contPrincipalVuelo.appendChild(duracionVuelo);
-    let duracionVueloS = document.createTextNode(duracionVuelos);
+    let duracionVueloString = document.createTextNode(duracionVueloStr);
     duracionVuelo.setAttribute("class", "duracionTiempo");
-    duracionVuelo.appendChild(duracionVueloS);
+    duracionVuelo.appendChild(duracionVueloString);
 
     let lineaDivisora = document.createElement("hr");
     contPrincipalVuelo.appendChild(lineaDivisora);
@@ -162,7 +190,7 @@ function cargar(horaSalida,horaLlegada,origen,destino,duracion,duracionVuelos,pr
     
     let newparadas= document.createElement("label");
     contPrincipalVuelo.appendChild(newparadas);
-    let txtparada=document.createTextNode(stopping);
+    let txtparada=document.createTextNode(parada);
     newparadas.setAttribute("class","paradas")
     newparadas.appendChild(txtparada); 
 }
