@@ -102,6 +102,7 @@
     margin: 0 20px;
     background-color: gray;
     font-size: .2em; 
+    width: 80%;
 }
 .paradas{
     grid-area: paradas;

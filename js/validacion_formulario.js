@@ -21,13 +21,13 @@ function guardarInfo() {
         return false;
     }
     alert("Informacion guardada con exito");
-    /*limpiarformulario();*/
+    limpiarformulario();
     return true;
 }
-/*function limpiarformulario() {
+function limpiarformulario() {
     document.getElementById("numeroDocumento").value = "";
     document.getElementById("nombre").value = "";
     document.getElementById("apellido").value = "";
     document.getElementById("direccion").value = "";
     document.getElementById("telefono").value = "";
-}*/
+}
