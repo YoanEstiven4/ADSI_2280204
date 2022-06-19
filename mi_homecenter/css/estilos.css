@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("https://cdn2.hubspot.net/hubfs/3815039/home-center-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main{
+    background: whitesmoke;
+    border-bottom: 2px solid black;
+    height: 90px;
+}
+.menu{
+    cursor: pointer;
+}
+.search{
+    margin-left: 550px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.punto{
+    margin-left: 250px;
+    margin-bottom: 35px;
+}
+.carrito{
+    margin-bottom: 28px;
+    cursor: pointer;
+}
+.user{
+    margin-left: 80px;
+    margin-bottom: 28px;
+    cursor: pointer;
+}
+div{
+    background: whitesmoke;
+    height: 335px;
+    width: 280px;
+    margin-left: 890px;
+    margin-top: 160px;
+    border-radius: 8px;
+}
+.inquietud{
+    height: 90px;
+}
