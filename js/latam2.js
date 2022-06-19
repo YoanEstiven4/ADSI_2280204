@@ -62,7 +62,7 @@ function definirJornada(horaEvento) {
     let vuelo = [{
         "horaSalida":  horaSalida1Str,
         "horaLlegada": horaLlegada1Str,
-        "duracion": "Duracion",//dudas
+        "duracion": "Duracion",
         "duracionVueloStr": "1h 20Min",
         "origen": "BOG",
         "destino": "CTG",
@@ -73,7 +73,7 @@ function definirJornada(horaEvento) {
     {
         "horaSalida":  horaSalida2Str,
         "horaLlegada": horaLlegada2Str,
-        "duracion": "Duracion",//dudas
+        "duracion": "Duracion",
         "duracionVueloStr": "1h 20Min",
         "origen": "BGT",
         "destino": "CTG",
@@ -85,33 +85,33 @@ function definirJornada(horaEvento) {
     {
         "horaSalida":  horaSalida4Str,
         "horaLlegada": horaLlegada4Str,
-        "duracion": "Duracion",//dudas
+        "duracion": "Duracion",
         "duracionVueloStr": "1h 20Min",
         "origen": "BGT",
         "destino": "CTG",
-        "precio": 900000,
+        "precio": 1900000,
         "parada": "Directo",
         "economico": "Más Económico..." 
     },
     {
         "horaSalida":  horaSalida3Str,
         "horaLlegada": horaLlegada3Str,
-        "duracion": "Duracion",//dudas
+        "duracion": "Duracion",
         "duracionVueloStr": "1h 20Min",
         "origen": "BGT",
         "destino": "CTG",
-        "precio": 420000,
+        "precio": 220000,
         "parada": "Directo",
         "economico": "Más Económico..."
     },
         {
             "horaSalida":  horaSalida5Str,
             "horaLlegada": horaLlegada5Str,
-            "duracion": "Duracion",//dudas
+            "duracion": "Duracion",
             "duracionVueloStr": "1h 20Min",
             "origen": "BGT",
             "destino": "CTG",
-            "precio": 420000,
+            "precio": 520000,
             "parada": "Directo",
             "economico": "Más Económico..."
     }];
