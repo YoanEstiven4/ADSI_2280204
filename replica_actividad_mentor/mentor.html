@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor</title>
+    <link rel="stylesheet" href="css/mentor.css">
+</head>
+<body>
+    
+    <div class="content1">
+    <div class="grid-main">
+        <div class="grid1">
+            <div class="prince" onclick="mostrarVentana();"><center><img id="imgPrincipal"  class="img-main" src="img/becky-main.jpg" alt=""  height="286px" width="465px"></center></div>
+        </div>
+        <div class="grid2">
+            <div class="caja"><img class="img1" onclick="intercambiarImagen('img/post4.jpg');" src="img/neymar1.jpg" alt="" height="76px" width="110px"></div>
+            <div class="caja"><img class="img1" onclick="mostrarMensajeCasillas('img/feid3.webp');" src="img/sergio2.jpg" alt="" height="78px" width="110px"></div>
+            <div class="caja"><img class="img1" onclick="mostrarMensajeCasillas('img/sergio2.jpg');" src="img/feid3.webp" alt="" height="78px" width="110px"></div>
+            <div class="caja"><img class="img1" onclick="mostrarMensajeCasillas('img/neymar1.jpg');" src="img/post4.jpg" alt="" height="78px" width="110px"></div>
+        </div>
+    </div>
+</div>
+
+
+    <!--ventana modal-->
+    <div id="ventana" class="contenedor">
+        
+            
+       
+
+    <div class="grid-main" >
+        <a href="javascript:void(0);" onclick="ocultarVentana()";>X</a>
+        
+        <div class="grid1">
+            <div class="prince"><center><img id="imgMain"  class="img-main" src="img/becky-main.jpg" alt=""  height="286px" width="465px"></center></div>
+        </div>
+        <div class="grid2">
+            <div class="caja"><img class="img1" onclick="intercambiarMian('img/post4.jpg');" src="img/neymar1.jpg" alt="" height="76px" width="110px"></div>
+            <div class="caja"><img class="img1" onclick="mostrarMensajeMian('img/feid3.webp');" src="img/sergio2.jpg" alt="" height="78px" width="110px"></div>
+            <div class="caja"><img class="img1" onclick="mostrarMensajeMian('img/sergio2.jpg');" src="img/feid3.webp" alt="" height="78px" width="110px"></div>
+            <div class="caja"><img class="img1" onclick="mostrarMensajeMian('img/neymar1.jpg');" src="img/post4.jpg" alt="" height="78px" width="110px"></div>
+        </div>
+    </div>
+</div>
+
+<!--aviso-->
+<div class="margin">
+
+<div class="aviso">
+    <div class="titulo">
+        <p>SNEAKER COMPAÑY</p>
+    </div>
+    <!--<div>1</div>
+    <div>2</div>
+    <div>3</div>-->
+     <div class="texto-cab"><h3>Fall Limited Editions Sneakers</h3></div>
+    <!-- <div>1</div>
+     <div>2</div>
+     <div>3</div>-->
+     <div class="texto1"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, eum?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, modi.</p></div>
+    <!-- <div>1</div>
+     <div>2</div>
+     <div>3</div>-->
+        
+    
+    
+    <div class="a1"><p>$125.00</p><li class="desc"> 50%</li></div>
+    <div class="a2">$250.00</div>
+    
+    
+    <div class="a9"><center><p class="pa">-</p><p class="pa">o</p><p class="pa">+</p></center></div>
+    <div class="a10"><p>Add to Car</p></div>
+    
+    
+</div>
+</div>
+
+
+    <script>
+        function mostrarVentana() {
+            document.getElementById('ventana').style.display = 'block';
+        }
+        function ocultarVentana() {
+            document.getElementById('ventana').style.display = 'none';
+        }
+    </script>
+
+    <script src="js/mentor.js"></script>
+</body>
+</html>
